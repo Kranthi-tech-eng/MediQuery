@@ -5,7 +5,7 @@ const Navbar = () => {
 
         <nav className='h-30 w-full flex justify-between bg-blue-200'>
             <div className="upside ">
-                <img src="public/mediquerylogo.png" alt="" className='h-30 w-40 bg-auto rounded-full' />
+                <img src="public/logo1.png" alt="" className='h-auto w-60 bg-auto rounded-full mt-5 ml-5' />
                 </div>
                 <div className="loginbtns gap-5 flex mt-6 mr-8 ">
                     <button className='bg-blue-500 text-white hover:font-extrabold cursor-pointer text-1xl rounded-full w-30 h-15'>Login</button>
