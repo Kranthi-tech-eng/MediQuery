@@ -5,6 +5,7 @@ import './App.css'
 import Navbar from './components/Navbar'
 import Main from './components/Main'
 import Faqs from './components/Faqs'
+// import Chatbot from './components/Chatbot'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -13,6 +14,7 @@ function App() {
     <>
      <Navbar/>
      <Main/>
+    {/* <Chatbot/> */}
      <Faqs/>
     </>
   )
