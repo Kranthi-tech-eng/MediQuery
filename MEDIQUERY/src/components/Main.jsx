@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 const Main = () => {
   return (
     <div className="search bg-[url(https://i.pinimg.com/736x/53/9c/3c/539c3c25f93825de8c1a633775123c1d.jpg)] bg-no-repeat bg-cover bg-content">
