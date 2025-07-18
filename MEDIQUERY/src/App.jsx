@@ -7,7 +7,6 @@ import Main from './components/Main'
 import Faqs from './components/Faqs'
 // import Chatbot from './components/Chatbot'
 import Footer from './components/Footer'
-
 function App() {
   const [count, setCount] = useState(0)
   
