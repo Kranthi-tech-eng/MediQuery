@@ -74,7 +74,7 @@ const Main = () => {
       </div>
 
       <div className="flex justify-center">
-        <div className="flex items-center bg-cyan-100 rounded-full px-4 py-2 w-150 h-15 border mt-25">
+        <div className="flex items-center bg-cyan-100 rounded-full sm:px-4 sm:py-2 sm:w-150 sm:h-15 border sm:mt-25 mt-15 w-100 h-13">
           <input
             type="text"
             placeholder="Enter your medicine name..."
@@ -115,13 +115,13 @@ const Main = () => {
       </div>
 
       {/* Replaced Cards Section */}
-      <div className="cards flex justify-center flex-wrap">
+      <div className="cards  grid sm:flex justify-center sm:flex-wrap">
         {cards.map((card, index) => (
           <div
             key={index}
             onClick={() => handleCardClick(index)}
-            className={`bg-white w-80 h-60 ml-3 mt-3 p-4 cursor-pointer transition-all duration-300  ease-in-out mb-4
-              ${activeCard === index ? 'scale-110 shadow-2xl w-100 h-80 z-10' : ''}
+            className={`bg-white w-80 h-40 sm:h-60 ml-3 mt-3 p-4 cursor-pointer transition-all duration-300  ease-in-out mb-4
+              ${activeCard === index ? 'sm:scale-110 h-60 w-100 sm:shadow-2xl sm:w-100 sm:h-80 sm:z-10' : ''}
             `}
           >
             <h3 className="font-bold mt-4 text-center text-lg mb-2">{card.name}</h3>
