@@ -84,7 +84,7 @@ const Main = () => {
           />
           <button onClick={handleSearchhh}>
             <img
-              src="public/search.png"
+              src="/search.png"
               alt="search"
               className="w-5 h-5 mr-3 hover:invert hover:cursor-pointer"
             />
