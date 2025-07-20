@@ -69,7 +69,7 @@ const Main = () => {
           <button onClick={handleSetReminder} className='h-10 w-25 bg-transparent font-extrabold text-black-700 hover:text-orange-400 hover:cursor-pointer ml-1.5'>
             Remainder
           </button>
-          <img src="public/remainder.png" alt="" className='w-10 h-10' />
+          <img src="/remainder.png" alt="" className='w-10 h-10' />
         </div>
       </div>
 
@@ -107,7 +107,7 @@ const Main = () => {
 
       <div className="relative group">
         <button className="chatbot cursor-pointer fixed bottom-4 right-4 bg-blue-500 text-white p-3 rounded-full shadow-lg hover:bg-blue-600">
-          <img src="public/chat-bot.png" alt="Chatbot" className="w-10" />
+          <img src="/chat-bot.png" alt="Chatbot" className="w-10" />
         </button>
         <div className="fixed bottom-20 right-4 bg-gray-800 text-white text-xs py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition">
           Chat with us!
