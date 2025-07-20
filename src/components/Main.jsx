@@ -42,7 +42,7 @@ const Main = () => {
 
   const handleSearchhh = async () => {
     try {
-      const res = await fetch(`http://localhost:5000/api/search?name=${search}`);
+      const res = await fetch(`https://mediquerybackend-1.onrender.com/api/search?name=${search}`);
       if (res.ok) {
         const data = await res.json();
         setResult(data);
