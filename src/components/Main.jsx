@@ -91,15 +91,35 @@ const Main = () => {
           </button>
         </div>
       </div>
-      {result && (
-        <div className="flex justify-center">
-        <div className="mt-4 p-4 w-100 h-40 bg-amber-50 border rounded">
-          <h3 className='font-extrabold mt-2  text-center text-2xl'>{result.name}</h3>
-          <p className='text-center mt-3'><strong>Uses:</strong> {result.uses}</p>
-          <p className='text-center'><strong>Time:</strong> {result.time}</p>
-        </div>
-        </div>
-      )}
+      {result?.type === "medicine" && (
+  <div className="flex justify-center">
+    <div className="mt-4 p-4 w-100 h-40 bg-amber-50 border rounded">
+      <h3 className="font-extrabold mt-2 text-center text-2xl">{result.name}</h3>
+      <p className="text-center mt-3"><strong>Uses:</strong> {result.uses}</p>
+      <p className="text-center"><strong>Time:</strong> {result.time}</p>
+    </div>
+  </div>
+)}
+
+{result?.type === "symptom" && (
+  <div className="mt-6">
+    <h3 className="text-center font-bold text-xl mb-4">Medicines for "{result.symptom}"</h3>
+    {result.medicines.length === 0 ? (
+      <p className="text-center text-red-500">No medicines found for this symptom.</p>
+    ) : (
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 px-4">
+        {result.medicines.map((med, idx) => (
+          <div key={idx} className="p-4 bg-green-50 border rounded shadow">
+            <h4 className="font-bold text-lg text-center">{med.name}</h4>
+            <p className="mt-2 text-center"><strong>Uses:</strong> {med.uses}</p>
+            <p className="text-center"><strong>Time:</strong> {med.time}</p>
+          </div>
+        ))}
+      </div>
+    )}
+  </div>
+)}
+
 
       <h2 className='font-bold underline text-center text-2xl ml-2 mt-8 px-2 mb-2 text-gray-600'>
         Most searched Medicines
