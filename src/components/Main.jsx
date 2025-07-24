@@ -77,7 +77,7 @@ const Main = () => {
         <div className="flex items-center bg-cyan-100 rounded-full sm:px-4 sm:py-2 sm:w-150 sm:h-15 border sm:mt-25 mt-15 w-100 h-13">
           <input
             type="text"
-            placeholder="Enter your medicine name..."
+            placeholder="Enter a medicine name or symptom..."
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             className="bg-transparent outline-none w-full"
