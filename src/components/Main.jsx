@@ -103,7 +103,7 @@ const Main = () => {
 
 {result?.type === "symptom" && (
   <div className="mt-6">
-    <h3 className="text-center font-bold text-xl mb-4">Medicines for "{result.symptom}"</h3>
+    <h3 className="text-center font-bold text-xl mb-4">Top used Medicines for "{result.symptom}."</h3>
     {result.medicines.length === 0 ? (
       <p className="text-center text-red-500">No medicines found for this symptom.</p>
     ) : (
